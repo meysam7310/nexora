@@ -1,3 +1,4 @@
+
 # Nexora
 
 ### Business Management Workspace
@@ -8,7 +9,60 @@ Nexora is a modern business management workspace designed to bring customer rela
 
 Built with a focus on usability, reusable component architecture, and a consistent user experience, Nexora provides an organized environment for managing everyday business operations.
 
-**[Live Demo](https://nexora.meysam-bagheri93.workers.dev)** · **[GitHub Repository](https://github.com/meysam7310/nexora)**
+<p align="left">
+  <a href="https://nexora.meysam-bagheri93.workers.dev">
+    <strong>Live Demo</strong>
+  </a>
+  &nbsp;·&nbsp;
+  <a href="https://github.com/meysam7310/nexora">
+    <strong>GitHub Repository</strong>
+  </a>
+</p>
+
+---
+
+## Product Preview
+
+Explore the Nexora workspace and its core interfaces.
+
+<table>
+  <tr>
+    <td width="50%" align="center">
+      <img
+        src="docs/screenshots/dashboard.jpg"
+        alt="Nexora Dashboard Overview"
+        width="100%"
+      />
+      <strong>Dashboard Overview</strong>
+    </td>
+    <td width="50%" align="center">
+      <img
+        src="docs/screenshots/customers.jpg"
+        alt="Nexora Customer Management"
+        width="100%"
+      />
+      <strong>Customer Management</strong>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" align="center">
+      <img
+        src="docs/screenshots/projects.jpg"
+        alt="Nexora Project Management"
+        width="100%"
+      />
+      <strong>Project Management</strong>
+    </td>
+    <td width="50%" align="center">
+      <img
+        src="docs/screenshots/reports.jpg"
+        alt="Nexora Reports and Analytics"
+        width="100%"
+      />
+      <strong>Reports &amp; Analytics</strong>
+    </td>
+  </tr>
+</table>
 
 ---
 
@@ -57,7 +111,8 @@ Its interface is designed around clear information hierarchy, practical workflow
 - Responsive dashboard layouts
 - Dark and light themes
 - Persistent theme preferences
-- Consistent UI components and interactions
+- Reusable UI components
+- Consistent interface interactions
 - Iconography powered by Lucide React
 
 ## Technology Stack
@@ -83,9 +138,11 @@ nexora/
 ├── app/
 │   ├── (dashboard)/
 │   │   ├── customers/
+│   │   │   └── [id]/
 │   │   ├── finance/
 │   │   ├── help/
 │   │   ├── projects/
+│   │   │   └── [id]/
 │   │   ├── reports/
 │   │   ├── settings/
 │   │   ├── tasks/
@@ -104,6 +161,8 @@ nexora/
 ├── hooks/
 ├── public/
 ├── types/
+├── docs/
+│   └── screenshots/
 │
 ├── next.config.ts
 ├── open-next.config.ts
@@ -124,7 +183,7 @@ nexora/
 
 ### Prerequisites
 
-- Node.js 20+
+- Node.js 20 or later
 - npm
 
 ### Installation
@@ -135,7 +194,7 @@ Clone the repository:
 git clone https://github.com/meysam7310/nexora.git
 ```
 
-Navigate to the project:
+Navigate to the project directory:
 
 ```bash
 cd nexora
@@ -153,7 +212,7 @@ Start the development server:
 npm run dev
 ```
 
-Open the application at:
+Open the application in your browser:
 
 ```text
 http://localhost:3000
@@ -169,6 +228,7 @@ http://localhost:3000
 | `npm run lint` | Run ESLint |
 | `npm run preview` | Build and preview the Cloudflare application |
 | `npm run deploy:cf` | Build and deploy to Cloudflare Workers |
+| `npm run deploy` | Build and deploy using OpenNext |
 | `npm run upload` | Build and upload the Cloudflare application |
 | `npm run cf-typegen` | Generate Cloudflare environment types |
 
@@ -202,6 +262,8 @@ The application provides a foundation for further development of business workfl
 
 ---
 
-**Nexora — Business Management Workspace**
-
-Built with Next.js, React, and TypeScript.
+<p align="center">
+  <strong>Nexora — Business Management Workspace</strong>
+  <br />
+  Built with Next.js, React, and TypeScript.
+</p>
